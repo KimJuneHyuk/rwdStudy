@@ -30,6 +30,7 @@
         <nav id="gnb">
             <h2 class="hidden">주요이용메뉴</h2>
             <ul>
+                <input id="button" type="button" value="닫기">
                 <li><a href="#">리스트1</a></li>
                 <li><a href="#">리스트2</a></li>
                 <li><a href="#">리스트3</a></li>
@@ -73,12 +74,18 @@
     <script>
         const gnbView = document.querySelector('.gnbView');
         const gnb = document.getElementById('gnb');
+        const btn = document.getElementById('button');
 
         gnbView.addEventListener('click', () => {
             gnb.style.left = '0px';
+            gnbView.style.display = 'none';
         });
-        gnb.addEventListener('mouseleave',() => {
-            gnb.style.left = '-200px'
+        // gnb.addEventListener('mouseleave',() => {
+        //     gnb.style.left = '-200px'
+        // });
+        btn.addEventListener('click', () => {
+            gnb.style.left ='-200px'
+            gnbView.style.display = 'block';
         });
     </script>
     

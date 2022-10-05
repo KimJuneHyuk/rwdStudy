@@ -241,6 +241,13 @@ main > section {
         transform: rotate(-45deg);
         top: 20px;
     }
+    .gnbView:active::before {
+        display: none;
+    }
+    .gnbView:active::after {
+        display: none;
+    }
+
     /* .gnbView:hover + #gnb {
         left: 0;
     } */
@@ -254,6 +261,18 @@ main > section {
         height: 100vh;
         transition: 0.5s;
     }
+    #button {
+        position: absolute;
+        top:30px;
+        left: 30px;
+        padding: 10px;
+        border-radius: 50%;
+        border: none;
+    }
+    #button:hover {
+        background-color: pink;
+        border: 1px solid rgb(240, 156, 170);
+    }
     #gnb > ul {
         height: 100%;
         align-items: center;
@@ -261,6 +280,7 @@ main > section {
         flex-direction: column;
         justify-content: center;
     }
+
     #gnb > ul > li {
         margin: 50px 0;
     }
