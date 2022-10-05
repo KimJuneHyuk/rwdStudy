@@ -173,7 +173,9 @@ main > section {
     main > section {
         width: 25%;
     }
-   
+    #button {
+        display: none;
+    }
 
 }
 /* 1200px 이하 */
@@ -189,6 +191,9 @@ main > section {
     }
     #event > p {
         font-size: 4.166vw;
+    }
+    #button {
+        display: none;
     }
 }
 
@@ -241,12 +246,7 @@ main > section {
         transform: rotate(-45deg);
         top: 20px;
     }
-    .gnbView:active::before {
-        display: none;
-    }
-    .gnbView:active::after {
-        display: none;
-    }
+
 
     /* .gnbView:hover + #gnb {
         left: 0;
@@ -262,6 +262,7 @@ main > section {
         transition: 0.5s;
     }
     #button {
+        display: block;
         position: absolute;
         top:30px;
         left: 30px;
